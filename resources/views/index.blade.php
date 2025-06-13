@@ -843,6 +843,7 @@ window.addEventListener('keydown', function(e) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   background: #181818;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
@@ -853,25 +854,30 @@ window.addEventListener('keydown', function(e) {
   height: 340px;
   min-width: 320px;
   min-height: 220px;
-  justify-content: center;
   transition: all 0.3s ease-in-out;
 }
 .gallery-modal-img {
   width: 420px;
-  height: 280px;
+  height: 220px;
   max-width: 100%;
   background: #222;
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
   display: block;
+  object-fit: cover;
+  margin-bottom: 18px;
 }
 .gallery-modal-caption {
   color: #fff;
   font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 1.1rem;
-  margin-top: 18px;
+  min-height: 28px;
+  margin-top: 0;
   text-align: center;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gallery-modal-close {
   position: absolute;
@@ -960,40 +966,40 @@ window.addEventListener('keydown', function(e) {
 
 const bandGalleries = [
   [
-    {src: 'images/photos/feast-1.jpg', caption: 'Feast'},
-    {src: 'images/photos/feast-2.jpg', caption: 'Feast'},
-    {src: 'images/photos/feast-3.jpg', caption: 'Feast'},
-    {src: 'images/photos/feast-4.jpg', caption: 'Feast'}
+    {src: 'images/photos/feast-1.jpg', caption: 'After the Show Feast'},
+    {src: 'images/photos/feast-2.jpg', caption: 'Live Performance Feast'},
+    {src: 'images/photos/feast-3.jpg', caption: 'Live Performance Feast'},
+    {src: 'images/photos/feast-4.jpg', caption: 'After the Show Feast'}
   ],
   [
-    {src: 'images/photos/forrevenge-1.jpg', caption: 'For Revenge'},
-    {src: 'images/photos/forrevenge-2.jpg', caption: 'For Revenge'},
-    {src: 'images/photos/forrevenge-3.jpg', caption: 'For Revenge'},
-    {src: 'images/photos/forrevenge-4.jpg', caption: 'For Revenge'}
+    {src: 'images/photos/forrevenge-1.jpg', caption: 'After the Show For Revenge'},
+    {src: 'images/photos/forrevenge-2.jpg', caption: 'Live Performance For Revenge'},
+    {src: 'images/photos/forrevenge-3.jpg', caption: 'Live Performance For Revenge'},
+    {src: 'images/photos/forrevenge-4.jpg', caption: 'Live Performance For Revenge'}
   ],
   [
-    {src: 'images/photos/hindia-1.jpg', caption: 'Hindia'},
-    {src: 'images/photos/hindia-2.jpg', caption: 'Hindia'},
-    {src: 'images/photos/hindia-3.jpg', caption: 'Hindia'},
-    {src: 'images/photos/hindia-4.jpg', caption: 'Hindia'}
+    {src: 'images/photos/hindia-1.jpg', caption: 'Live Performance Hindia'},
+    {src: 'images/photos/hindia-2.jpg', caption: 'Live Performance Hindia'},
+    {src: 'images/photos/hindia-3.jpg', caption: 'Live Performance Hindia'},
+    {src: 'images/photos/hindia-4.jpg', caption: 'Live Performance Hindia'}
   ],
   [
-    {src: 'images/photos/lombasihir-1.jpg', caption: 'Lomba Sihir'},
-    {src: 'images/photos/lombasihir-2.jpg', caption: 'Lomba Sihir'},
-    {src: 'images/photos/lombasihir-3.jpg', caption: 'Lomba Sihir'},
-    {src: 'images/photos/lombasihir-4.jpg', caption: 'Lomba Sihir'}
+    {src: 'images/photos/lombasihir-1.jpg', caption: 'After the Show Lomba Sihir'},
+    {src: 'images/photos/lombasihir-2.jpg', caption: 'Live Performance Lomba Sihir'},
+    {src: 'images/photos/lombasihir-3.jpg', caption: 'Live Performance Lomba Sihir'},
+    {src: 'images/photos/lombasihir-4.jpg', caption: 'Live Performance Lomba Sihir'}
   ],
   [
-    {src: 'images/photos/nadin-1.jpg', caption: 'Nadin Amizah'},
-    {src: 'images/photos/nadin-2.jpg', caption: 'Nadin Amizah'},
-    {src: 'images/photos/nadin-3.jpg', caption: 'Nadin Amizah'},
-    {src: 'images/photos/nadin-4.jpg', caption: 'Nadin Amizah'}
+    {src: 'images/photos/nadin-1.jpg', caption: 'Live Performance Nadin Amizah'},
+    {src: 'images/photos/nadin-2.jpg', caption: 'Live Performance Nadin Amizah'},
+    {src: 'images/photos/nadin-3.jpg', caption: 'Live Performance Nadin Amizah'},
+    {src: 'images/photos/nadin-4.jpg', caption: 'Live Performance Nadin Amizah'}
   ],
   [
-    {src: 'images/photos/realityclub-1.jpg', caption: 'Reality Club'},
-    {src: 'images/photos/realityclub-2.jpg', caption: 'Reality Club'},
-    {src: 'images/photos/realityclub-3.jpg', caption: 'Reality Club'},
-    {src: 'images/photos/realityclub-4.jpg', caption: 'Reality Club'}
+    {src: 'images/photos/realityclub-1.jpg', caption: 'Live Performance Reality Club'},
+    {src: 'images/photos/realityclub-2.jpg', caption: 'Live Performance Reality Club'},
+    {src: 'images/photos/realityclub-3.jpg', caption: 'Live Performance Reality Club'},
+    {src: 'images/photos/realityclub-4.jpg', caption: 'Live Performance Reality Club'}
   ]
 ];
 let galleryBandIdx = 0;

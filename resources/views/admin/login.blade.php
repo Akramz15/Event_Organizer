@@ -34,11 +34,11 @@
                     @if(session('error'))
                         <div class="login-error">{{ session('error') }}</div>
                     @endif
-                    <div class="socials">
+                    <!-- <div class="socials">
                         <a href="#"><i class="ion-social-facebook"></i></a>
                         <a href="#"><i class="ion-social-instagram"></i></a>
                         <a href="#"><i class="ion-social-pinterest"></i></a>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
